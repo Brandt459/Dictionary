@@ -1,13 +1,63 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*, *::before, *::after {
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    background: url('images/LibraryBookShelves.jpg');
+    font-family: sans-serif;
+}
+
+#dictionary-search {
+    display: flex;
+    margin: auto;
+    height: 2em;
+    width: 60%;
+    margin-top: 20px;
+}
+
+.query {
+    flex: 6;
+}
+
+.submit {
+    flex: 1;
+}
+
+.results {
+    margin: 20px auto;
+    width: 60%;
+    background: white;
+    padding: 10px 30px;
+}
+
+.word-info {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid gray;
+}
+
+.word {
+    font-size: 40px;
+    margin-right: 20px;
+}
+
+.pronunciation {
+    color: gray;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.part-of-speech {
+    font-size: 30px;
+}
+
+.error-div {
+    width: 60%;
+    margin: auto;
+}
+
+.word-error {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
 }
